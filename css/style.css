@@ -1,0 +1,468 @@
+:root{
+   --green:#2eb872;
+   --white:#fff;
+   --black:#000000;
+   --black-600:#232323;
+   --grey:#a8a8a8;
+   --dark-grey:#787878;
+   --nunito-font:'Nunito Sans';
+   --rajdhani-font:'Rajdhani';
+}
+body{
+    background-color: #282f34;
+}
+a{
+    text-decoration: none;
+}
+ol, ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+/* header */
+.header i{
+    font-size: 25px;
+    color: var(--green);
+}
+.header span{
+    font-size: 14px;
+    font-family: var(--nunito-font);
+    color: var(--grey);
+    font-weight: 400;
+}
+.header h5{
+    font-size: 16px;
+    font-family: var(--rajdhani-font);
+    color: var(--dark-grey);
+}
+
+/* navbar */
+.navbar .navbar-collapse button{
+    padding: 12px 15px;
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+}
+.navbar .navbar-collapse ul li a{
+    font-family: var(--rajdhani-font);
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.navbar .navbar-collapse ul li a:hover{
+    color: var(--green)!important;
+}
+
+.navbar .navbar-collapse button{
+    padding: 12px 20px;
+    background-color: var(--green);
+    border: none;
+    color: var(--white);
+    font-family: var(--rajdhani-font);
+    font-weight: 800;
+    transition: all 0.5s;
+}
+.navbar .navbar-collapse button:hover{
+    color: var(--green);
+    background-color: var(--white);
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+/* banner-cursoul */
+.banner{
+    background-image: url(../img/slider-11.jpg);
+    background-size: cover;
+}
+.banner .banner-content h2, .banner .banner-content span{
+    color: var(--white);
+    font-size: 56px;
+    position: relative;
+    font-family: var(--rajdhani-font);
+    font-weight: 700;
+}
+.banner .banner-content span{
+    color: var(--green);
+}
+.banner .banner-content h2::after{
+    content: '';
+    box-sizing: border-box;
+    width: 150px;
+    height: 3px;
+    background-color: var(--green);
+    position: absolute;
+    left: 285px;
+    top: 38px;
+}
+.banner .banner-content p{
+    font-family: var(--nunito-font);
+    font-size: 15px;
+    color: var(--grey);
+    width: 70%;
+}
+.banner .banner-content button{
+    padding: 12px 20px;
+    background-color: var(--green);
+    border: none;
+    color: var(--white);
+    font-family: var(--rajdhani-font);
+    font-weight: 800;
+    transition: all 0.5s;
+}
+.banner .banner-content button:hover{
+    color: var(--black);
+}
+
+/* title */
+.title{
+    text-align: center;
+}
+.title span{
+    font-size: 15px;
+    font-family: var(--nunito-font);
+    color: var(--green);
+    font-weight: 600;
+}
+.title h2{
+    font-size: 43px;
+    font-family: var(--rajdhani-font);
+    color: var(--grey);
+    font-weight: 600;
+}
+
+/* services */
+.services{
+    padding: 20px;
+}
+.services div, .guest-service{
+    background-color: #545454c9;
+    border-radius: 10px;
+    padding: 35px;
+}
+.services div:hover i, .guest-service:hover i{
+   transform: rotateY(180deg);  
+}
+.services i, .guest-service i{
+    font-size: 32px;
+    color: var(--green);
+    transition: all 0.5s;
+}
+.services span, .guest-service span{
+    color: var(--dark-grey);
+    font-family: var(--rajdhani-font);
+    font-weight: 600;
+    font-size: 22px;
+}
+.services p,  .guest-service p{
+    color: var(--white);
+    font-family: var(--nunito-font);
+    font-size: 15px;
+    width: 70%;
+}
+.services a{
+    color: var(--dark-grey);
+    font-family: var(--rajdhani-font);
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3 s;
+}
+.services a:hover{
+    color: var(--green);
+}
+
+
+/* about */
+.about-content span{
+    font-size: 15px;
+    font-family: var(--nunito-font);
+    color: var(--green);
+    font-weight: 600;
+}
+.about-content h3{
+    font-size: 40px;
+    width: 90%;
+    padding: 15px 0;
+    font-family: var(--rajdhani-font);
+    color: var(--grey);
+    font-weight: 600;
+}
+.about-content p{
+    font-size: 15px;
+    font-family: var(--nunito-font);
+    color: var(--dark-grey);
+    width: 80%;
+    font-weight: 600;
+}
+.about i{
+    color: var(--green);
+    font-size: 30px;
+}
+.about-content .about span{
+    color: var(--white);
+    font-size: 30px;
+    font-family: var(--rajdhani-font);
+    padding: 0 0 0 10px;
+}
+.about-content button{
+    font-family: var(--rajdhani-font);
+    font-size: 15px;
+    font-weight: 600;
+}
+.button{
+    height: 40px;
+    width: 130px;
+    border: 0;
+    background-color: var(--green);
+    color: var(--white);
+    transition: all 0.3s;
+}
+.button:hover{
+    background-color: var(--dark-grey);
+}
+/* testimonials-about */
+.testimonials-about{
+    padding: 20px;
+    margin-top: 0;
+}
+.testimonials-about .content{
+    background-color: var(--dark-grey);
+    border-radius: 10px;
+    padding: 20px 20px 20px 50px;
+    position: relative;
+}
+.testimonials-about .content::before{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid var(--black-600);
+    height: 50px;
+    left: 20px;
+    transition: all 0.5s;
+}
+.testimonials-about .content:hover::before{
+    height: 100px;
+}
+.testimonials-about .content::after{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid var(--black-600);
+    height: 80px;
+    left: 14px;
+    top: 20px;
+    transition: all 0.5s;
+}
+.testimonials-about .content:hover::after{
+    height: 50px;
+}
+.testimonials-about span{
+    color: var(--green);
+    font-family: var(--rajdhani-font);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.testimonials-about p{
+    font-family: var(--nunito-font);
+    color: var(--black-600);
+    font-size: 15px;
+    width: 90%;
+}
+
+/* events */
+.events .content{
+    padding: 25px;
+}
+.events .content .heading i{
+    color: var(--green);
+    padding-right: 6px;
+}
+.events .content .heading h4, .events .content p{
+    font-size: 14px;
+    color: var(--dark-grey);
+    font-family: var(--nunito-font);
+}
+.events .content span{
+    font-family: var(--rajdhani-font);
+    font-size: 22px;
+    color: var(--grey);
+    font-weight: 600;
+}
+.events .content h6{
+    font-size: 15px;
+    color: var(--white);
+    background-color: var(--green);
+    font-family: var(--rajdhani-font);
+    height: 30px;
+    width: 100px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 30px;
+}
+.events img:hover, .events-img img:hover, .about-img img:hover{
+    transform: scale(1.1);
+}
+.events img, .events-img img, .about-img img{
+    transition: all 0.5s;
+}
+.events .events-img, .events-img, .about-img{
+    overflow: hidden;
+}
+/* footer */
+footer h2{
+    font-size: 18px;
+    color: var(--green);
+    font-family: var(--nunito-font);
+}
+footer ul{
+    padding-left: 0;
+}
+footer ul li{
+    padding: 7px 0;
+}
+footer ul li a{
+    color: var(--dark-grey);
+    font-family: var(--rajdhani-font);
+    font-weight: 600;
+    transition: all 0.2s;
+}
+footer ul li a:hover{
+    color: var(--green);
+}
+
+
+/* service page */
+.service-page .banner{
+    background-image: url(../img/t4.jpg);
+    background-size: cover;
+    padding: 150px 0;
+    position: relative;
+}
+.service-page .banner-overlay, .about-page .banner-overlay, .blog-page .banner-overlay, .gallery-page .banner-overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.648);
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+.service-page .banner-title, .about-page .banner-title, .blog-page .banner-title, .gallery-page .banner-title{
+    padding-top: 120px;
+}
+
+/* about-page */
+.about-page .banner{
+    background-image: url(../img/t1.jpg);
+    background-size: cover;
+    padding: 150px 0;
+    position: relative;
+}
+.nav-pills .nav-link.active{
+    background-color: var(--green);
+    color: var(--white);
+    font-family: var(--nunito-font);
+}
+.nav-link{
+   color: var(--white);
+   font-family: var(--nunito-font);
+}
+.nav-link:hover{
+    color: var(--white);
+}
+.tab-content h2{
+    color: var(--dark-grey);
+    width: 90%;
+}
+.tab-content p{
+    color: var(--grey);
+    padding: 10px 0;
+    font-family: var(--nunito-font);
+    width: 89%;
+}
+.tab-content ul li{
+    color: var(--dark-grey);
+    font-family: var(--nunito-font);
+}
+.about-content img:hover{
+    transform: scale(1.1);
+}
+.about-content{
+    overflow: hidden;
+}
+
+/* blog-page */
+.blog-page .banner{
+    background-image: url(../img/01.jpg);
+    background-size: cover;
+    padding: 150px 0;
+    position: relative;
+}
+
+.animal-blog .content{
+    background-color: #545454c9; 
+    padding: 15px;
+}
+.animal-blog .content span{
+    font-size: 14px;
+    font-family: var(--nunito-font);
+}
+.animal-blog .content h5{
+    font-size: 23px;
+    font-family: var(--rajdhani-font);
+    color: var(--black-600);
+    font-weight: 600;
+}
+.animal-blog .content p{
+    font-size: 14px;
+    font-family: var(--nunito-font);
+}
+.animal-blog .content a{
+    font-size: 15px;
+    font-family: var(--rajdhani-font);
+    font-weight: 600;
+}
+.animal-blog .animal-img img:hover{
+    transform: scale(1.1);
+}
+.animal-blog .animal-img img{
+    transition: all 0.5s;
+}
+.animal-blog .animal-img{
+    overflow: hidden;
+}
+
+/* gallery page */
+.gallery-page .banner{
+    background-image: url(../img/t3.jpg);
+    background-size: cover;
+    padding: 150px 0;
+    position: relative;
+}
+ .gallery-img img:hover{
+    transform: scale(1.1);
+}
+ img{
+    transition: all 0.5s;
+}
+ .gallery-img{
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s;
+}
+.gallery-content{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.749);
+    bottom: 0px;
+    opacity: 0;
+    height: 100px;
+    width: 100%;
+    transition: all 0.5s;
+    padding:25px 0 0 10px;
+}
+.gallery-img:hover .gallery-content{
+    opacity: 1;
+}
+.gallery-content span{
+    color: var(--green);
+}
+.gallery-content h6{
+    color: var(--grey);
+}
